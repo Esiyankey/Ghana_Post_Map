@@ -3,7 +3,7 @@ import { FaCrosshairs} from "react-icons/fa";
 import Details from './Detail';
 
 
-export default function Main_container() {
+export default function MainContainer() {
    
     
     return (
