@@ -8,8 +8,8 @@ export default function Main_container() {
     
     return (
         <div className='flex  '>
-            <div className='   h-screen bg-white   w-[400px] overflow-y-scroll'>
-                <input type="text" placeholder='Search for Address, Places, Cordinates' className=' focus:border-blue-300 outline-none m-4 w-[345px] bg-gray-50 py-2 px-6 shadow-gray-400 border shadow-custom border-gray-300' />
+            <div className='fixed   h-screen bg-white   w-[350px] overflow-y-scroll overflow-x-hidden pb-12'>
+                <input type="text" placeholder='Search for Address, Places, Cordinates' className=' focus:border-blue-300 outline-none m-4 w-[90%] bg-gray-50 py-2 px-6 shadow-gray-400 border shadow-custom border-gray-300' />
 
                 <h5 className=' p-2 font-light '>Address Info </h5>
 
