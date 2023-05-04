@@ -2,7 +2,7 @@ import { useState } from "react";
 import Details from "./Detail";
 import Search from './Search'
 import ShowLocation from "./ShowLocation";
-import './App.css';
+
 
 export default function MainContainer() {
   return (

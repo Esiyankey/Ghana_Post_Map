@@ -2,9 +2,12 @@
 @media only screen and (max-width: 480px) {
     .MainApp{
         display: flex;
-        flex-direction: row;
-        
     }
+    .MainContainer{
+        display: flex;
+        flex-direction: row;
+    }
+    
   
   
   }

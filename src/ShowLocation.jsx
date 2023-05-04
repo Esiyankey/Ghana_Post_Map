@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaCrosshairs } from "react-icons/fa";
-import './App.css';
+
 
 
 export default function ShowLocation() {
