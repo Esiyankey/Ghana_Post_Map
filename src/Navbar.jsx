@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { FaBars } from "react-icons/fa";
 import { FaGlobe } from "react-icons/fa";
-
+import './App.css';
 
 
 

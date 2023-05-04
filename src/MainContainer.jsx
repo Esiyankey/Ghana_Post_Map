@@ -2,6 +2,7 @@ import { useState } from "react";
 import Details from "./Detail";
 import Search from './Search'
 import ShowLocation from "./ShowLocation";
+import './App.css';
 
 export default function MainContainer() {
   return (
@@ -13,7 +14,7 @@ export default function MainContainer() {
           <ShowLocation/>
           <Details />
         </div>
-        
+
         <div className="w-[950px]    md:w-[75%]">
           
         </div>

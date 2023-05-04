@@ -1,5 +1,8 @@
 import React from 'react'
 import { FaCrosshairs } from "react-icons/fa";
+import './App.css';
+
+
 export default function ShowLocation() {
   return (
     <div className="h-28 shadow-custom bg-zinc-50 shadow-lg p-4 ">
