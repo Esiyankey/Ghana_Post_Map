@@ -27,7 +27,7 @@ export default function ShowLocation() {
             </div>
 
             <div className="text-right   relative top-2 ">
-              <span className='sm:hidden  relative left-8 text-2xl'>{items[0].value}</span>
+              <span className='sm:hidden  relative left-16 text-xl'>{items[0].value}</span>
               <small className=" font-light invisible sm:visible text-primary relative left-32 text-blue-500">
                 Address version2
               </small>
