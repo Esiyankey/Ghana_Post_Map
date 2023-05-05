@@ -10,7 +10,7 @@ export default function MainContainer() {
   }
   return (
     <>
-      <div className="  flex flex-1 bg-red-400 overflow-y-auto  ">
+      <div className="  flex flex-1  overflow-y-auto  ">
 
         <div className="fixed sm:static overflow-y-auto  sm:bg-white  w-[100%]  sm:w-[400px] ">
           <Search />
