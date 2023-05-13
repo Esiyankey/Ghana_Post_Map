@@ -1,13 +1,15 @@
-import { useState } from "react";
+import React from 'react'
 import {items} from './list'
 
 
-export default function Details() {
-     
-
+export default function SmallDetails () {
   return (
-    
-      <ul className=" hidden bg-white sm:block ">
+    <ul className=" fixed w-full  bottom-[60px] bg-gray-100 sm:hidden }">
+      <h5 className='p-2 '>
+        "Address info: "
+        <span className='font-bold uppercase text-lg'>...</span>
+        <span className='font-light text-lg'> Address version 2</span>
+      </h5>
         {items.map((item, index) => (
           <ListItem item={item} key={index} />
         ))}
@@ -27,4 +29,5 @@ const ListItem = ({ item }) => {
       </div>
     </li>
   );
-};
+  
+}
