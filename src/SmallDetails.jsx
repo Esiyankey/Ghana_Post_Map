@@ -4,7 +4,7 @@ import {items} from './list'
 
 export default function SmallDetails () {
   return (
-    <ul className=" fixed w-full  bottom-[60px] bg-gray-100 sm:hidden }">
+    <ul className=" fixed w-full left-0 bottom-[60px] bg-gray-100 sm:hidden }">
       <h5 className='p-2 '>
         "Address info: "
         <span className='font-bold uppercase text-lg'>...</span>

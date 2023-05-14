@@ -7,9 +7,7 @@ export default {
   theme: {
     extend: {
       extend: {
-        boxShadow: {
-          'custom': '5px 1px 5px 15px ',
-        }
+        
       }
     },
   },

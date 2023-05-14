@@ -16,7 +16,7 @@ export default function ShowLocation() {
 
   return (
     <>
-      <div className="h-28 shadow-custom bg-gray-100 shadow-lg p-4 fixed w-full bottom-0 sm:static flex   ">
+      <div className="h-24 -z-32 shadow-custom bg-gray-100 my-2 px-6 py-2 fixed w-full bottom-0 sm:static flex  ">
         <div>
           <div className="flex sm:flex-col ">
             <div className="flex sm:gap-8 items-center">
@@ -26,24 +26,24 @@ export default function ShowLocation() {
               </h1>
             </div>
             <div className=" text-uppercase ">
-              <span className="text-green-500 text-3xl relative left-12 sm:top-3 ">
+              <span className="text-green-500 text-3xl relative left-12 sm:top-1 ">
                 GE-323-1583
               </span>
             </div>
           </div>
 
           <div className="text-right   relative top-2 ">
-            <span className="sm:hidden  relative left-8 text-xl">
+            <span className="sm:hidden  relative left-8 text-lg">
               {items[0].value}
             </span>
-            <small className=" font-light invisible sm:visible text-primary relative left-28 text-blue-500">
+            <small className=" font-light hidden sm:inline text-primary relative left-24 top-[-10px] text-blue-500">
               Address version2
             </small>
           </div>
         </div>
         <div>
           <button
-            className=" relative left-8 text-2xl h-[40px] w-[40px] bg-blue-600 sm:hidden text-white flex justify-center items-center"
+            className=" relative left-28 text-2xl h-[35px] w-[30px] bg-blue-600 sm:hidden text-white flex justify-center items-center"
           onClick={() => {
               handleAnimation();
               handleShowDetails();
@@ -54,7 +54,7 @@ export default function ShowLocation() {
         </div>
       </div>
       <div
-        className={`  fixed left-0 w-full  -z-30  transition-all duration-1000 ${menuState? 'top-1/2 animateIn': 'top-[320vh] animateOut'}
+  className={`  fixed  w-full -z-20   transition-all duration-1000 ${menuState? 'top-1/2 animateIn': 'top-[320vh] animateOut'}
   `}
       >
         {showDetails && <SmallDetails />}
