@@ -10,39 +10,40 @@ import {
 export default function Details(props) {
   const { lat, lng } = props.location; 
   const region = props.region;
+  const street = props.street;
  const items = [
   {
-    icon: <FaDirections className="text-blue-300 text-2xl" />,
+    icon: <FaDirections className="text-blue-300 text-xl" />,
     title: "Steet Name",
-    value: "Lante Abraham Street",
+    value: street,
   },
   {
-    icon: <FaGlobe className="text-blue-300 text-2xl" />,
+    icon: <FaGlobe className="text-blue-300 text-xl" />,
     title: "Region",
     value: region,
   },
   {
-    icon: <FaGlobeAmericas className="text-blue-300 text-2xl" />,
+    icon: <FaGlobeAmericas className="text-blue-300 text-xl" />,
     title: "District",
     value: "Weija",
   },
   {
-    icon: <FaMapMarkerAlt className="text-blue-300 text-2xl" />,
+    icon: <FaMapMarkerAlt className="text-blue-300 text-xl" />,
     title: "Community",
     value: "Tunga ",
   },
   {
-    icon: <FaGlobeAmericas className="text-blue-300 text-2xl" />,
+    icon: <FaGlobeAmericas className="text-blue-300 text-xl" />,
     title: "Postal Area",
     value: "Dansoman 456",
   },
   {
-    icon: <FaMapMarkerAlt className="text-blue-300 text-2xl" />,
+    icon: <FaMapMarkerAlt className="text-blue-300 text-xl" />,
     title: "Postal Code",
     value: "GJ453",
   },
   {
-    icon: <FaDirections className="text-blue-300 text-2xl" />,
+    icon: <FaDirections className="text-blue-300 text-xl" />,
     title: "lattitude,longitude",
     value: ` ${lat}, ${lng}`
   },

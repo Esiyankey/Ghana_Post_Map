@@ -9,16 +9,18 @@ import {
 
 export default function SmallDetails (props) {
   const { lat, lng } = props.location;
+  const region = props.region;
+  const street= props.street;
  const items = [
   {
     icon: <FaDirections className="text-blue-300 text-2xl" />,
     title: "Steet Name",
-    value: "Lante Abraham Street",
+    value: street,
   },
   {
     icon: <FaGlobe className="text-blue-300 text-2xl" />,
     title: "Region",
-    value: "Greater Accra",
+    value: region,
   },
   {
     icon: <FaGlobeAmericas className="text-blue-300 text-2xl" />,
@@ -47,7 +49,7 @@ export default function SmallDetails (props) {
   },
 ];
   return (
-    <ul className=" fixed w-full left-0 bottom-[100px] bg-gray-100 sm:hidden }">
+    <ul className="  w-full left-0  bg-gray-100 sm:hidden }">
       <h5 className='p-2 '>
         "Address info: "
         <span className='font-bold uppercase text-lg'>...</span>

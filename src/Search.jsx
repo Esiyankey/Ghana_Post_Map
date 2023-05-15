@@ -23,10 +23,11 @@ export default function Search(props) {
             (component) =>
               component.types.includes("administrative_area_level_1")
           ).long_name;
+          const street = currentParameterData.address_components[0].long_name
+          props.onStreetChange(street)
           props.onRegionChange(region);
           const { lat, lng } = currentParameterData.geometry.location;
           props.onLocationChange({ lat, lng });
-
 
         } else {
           alert("Cant find this location");
