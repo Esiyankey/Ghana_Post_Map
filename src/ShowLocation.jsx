@@ -4,7 +4,8 @@ import { items } from "./list";
 import SmallDetails from "./SmallDetails.jsx";
 import "./react.css";
 
-export default function ShowLocation() {
+export default function ShowLocation(props) {
+  const { location } = props;
   const [showDetails, setShowDetails] = useState(false);
   const [menuState, setMenuState] = useState(false);
   const handleShowDetails = () => {
@@ -54,10 +55,10 @@ export default function ShowLocation() {
         </div>
       </div>
       <div
-  className={`  fixed  w-full -z-20   transition-all duration-1000 ${menuState? 'top-1/2 animateIn': 'top-[320vh] animateOut'}
+  className={` fixed  w-full -z-20   transition-all duration-1000 ${menuState? 'top-1/2 animateIn': 'top-[320vh] animateOut'}
   `}
       >
-        {showDetails && <SmallDetails />}
+        {showDetails && <SmallDetails location={location} />}
       </div>
     </>
   );

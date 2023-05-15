@@ -6,8 +6,6 @@ import {
     FaMapMarkerAlt,
   } from "react-icons/fa";
 
-
-  
 export const items = [
     {
       icon: <FaDirections className="text-blue-300 text-2xl" />,
@@ -42,6 +40,6 @@ export const items = [
     {
       icon: <FaDirections className="text-blue-300 text-2xl" />,
       title: "lattitude,longitude",
-      value: "5.550370, -0.276922",
+      
     },
   ];

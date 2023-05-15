@@ -1,9 +1,52 @@
 import { useState } from "react";
-import {items} from './list'
+import {
+  FaGlobeAmericas,
+  FaDirections,
+  FaGlobe,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
 
 
-export default function Details() {
-     
+export default function Details(props) {
+  const { lat, lng } = props.location; 
+  const region = props.region;
+ const items = [
+  {
+    icon: <FaDirections className="text-blue-300 text-2xl" />,
+    title: "Steet Name",
+    value: "Lante Abraham Street",
+  },
+  {
+    icon: <FaGlobe className="text-blue-300 text-2xl" />,
+    title: "Region",
+    value: region,
+  },
+  {
+    icon: <FaGlobeAmericas className="text-blue-300 text-2xl" />,
+    title: "District",
+    value: "Weija",
+  },
+  {
+    icon: <FaMapMarkerAlt className="text-blue-300 text-2xl" />,
+    title: "Community",
+    value: "Tunga ",
+  },
+  {
+    icon: <FaGlobeAmericas className="text-blue-300 text-2xl" />,
+    title: "Postal Area",
+    value: "Dansoman 456",
+  },
+  {
+    icon: <FaMapMarkerAlt className="text-blue-300 text-2xl" />,
+    title: "Postal Code",
+    value: "GJ453",
+  },
+  {
+    icon: <FaDirections className="text-blue-300 text-2xl" />,
+    title: "lattitude,longitude",
+    value: ` ${lat}, ${lng}`
+  },
+];
 
   return (
     

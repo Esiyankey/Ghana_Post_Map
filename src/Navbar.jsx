@@ -8,9 +8,9 @@ import logo from './assets/logo.png'
 export default function Navbar() {
     return (
                 <div className="bg-blue-700  h-14  px-6 flex items-center justify-between text-center " >
-                    <div className='w-52  flex justify-between items-center '>
+                    <div className='w-72  flex justify-between items-center '>
                         <img src={logo} alt="logo-here" className='w-28 object-cover' />
-                        <button className= " hidden sm:flex h-9 w-9  justify-center items-center hover:bg-blue-600"><FaBars className=' text-gray-300'/></button>
+                        <button className= " hidden sm:flex h-9 w-9   justify-center items-center hover:bg-blue-600"><FaBars className=' text-gray-300'/></button>
                     </div>
                     <div>
 

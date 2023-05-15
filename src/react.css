@@ -15,16 +15,13 @@
         top:45%;
     }
     100% {
-        top:45%;
+        top:50%;
     }
 }
 
     @keyframes animateOut {
         0%{
             top: 55%;
-        }
-        25% {
-            top:50%;
         }
         50% {
             top:45%;
