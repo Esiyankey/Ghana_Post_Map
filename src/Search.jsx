@@ -41,15 +41,17 @@ export default function Search(props) {
   };
 
   return (
-    <div className=" bg-gray-50 ">
-      <input
-        type="text"
-        placeholder="Search for Address, Places, Cordinates"
-        className=" focus:border-blue-300 outline-none m-4 w-[90%] bg-gray-50 py-2 px-12 shadow-custom border  border-gray-300"
-        onChange={handleInputChange}
-        value={typedText}
-        onKeyDown={handleKeyDown}
-      />
-    </div>
+   <div className="w-[400px]">
+
+     <input
+       type="text"
+       placeholder="Search for Address, Places, Cordinates"
+       className=" focus:border-blue-300 outline-none m-4  bg-gray-50 py-2 px-[82px] shadow-custom border  border-gray-300"
+       onChange={handleInputChange}
+       value={typedText}
+       onKeyDown={handleKeyDown}
+     />
+   </div>
+   
   );
 }
